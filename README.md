@@ -30,26 +30,53 @@ Well, now we need to connect our database to the tool that we will be using to d
 
 If you would like to install MySQL Workbench, please click [here](https://dev.mysql.com/downloads/) and follow the installation steps!
 
-1. We first need to define the parameters by setting up a new connection, by clicking n the plus sign as shown in the picture below.
+1. We first need to define the parameters by setting up a new connection, by clicking on the plus sign as shown in the picture below.
 
-2. Go to your database service on Aiven and copy the corresponding parameters' values into Workbench
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145695025-bd72a030-061f-4aa9-9ccd-85539e624410.png
+ "createMysqlService4") 
 
-3. Download the "CA Certificate" and attach it to the "SSL CA File" under the SSL section in Workbench as in the picture below
+2. Go to your database service on Aiven and copy the corresponding parameters' values into Workbench amd give a name to your Connection as shown in the pictures
+
+![Stormtroopocat]("https://user-images.githubusercontent.com/6803398/145695026-72302587-9426-4a9a-a9be-e76f0c054880.png
+ "createMysqlService5") 
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145695032-92bc160c-b54a-4815-825c-0e46ec43edc4.png
+ "createMysqlService8") 
+
+3. Download the "CA Certificate" and attach it to the "SSL CA File" under the SSL section in Workbench as in the pictures below
+
+
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145695031-7d81ee60-4a72-4e25-b325-d25d8dced061.png
+ "createMysqlService7") 
 
 4. Test your Database connection by clicking on the "Test Connection" button
 
 5. when the connection is successful as in the picture shown, click the "Ok" button
 
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145695034-eb127391-f8dd-4802-b474-8b250a277e46.png
+ "createMysqlService9") 
+
 Now you are ready to start the fun part!
 
 ## Create Database Tables
 
-Now, we will test our Database by creating a small example of 2 tables, adding some records, and observe our Aiven application!
+1. Now, we will test our Database by creating a small example of 2 tables, adding some records, and observe our Aiven application!
 
-In this example, we will create a "Persons" table and "Cats" table from Workbench.
+2. In this example, we will create a "Persons" table and "Cats" table from Workbench, as shown in the picture.
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145720605-172fd0ad-52d3-46b6-b3e2-caee79f98133.png
+    "createMysqlService110") 
+3. Then we created 1 instance of Persons and 2 instances of cats
+
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145720608-951742f8-cc06-47d5-8376-5a9d4540cc0f.png
+    "createMysqlService111") 
+
+4. Then, you can check your Aiven service, you will find different views that show information about your database, for example, you can check the logs and the Query statistics as shown below
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145721257-dab66c9f-aeb6-4923-9078-141eaf3597d7.png
+    "createMysqlService12") 
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145720609-239ac246-eca9-420f-8bab-db4e0debdf60.png
+    "createMysqlService13") 
+![Stormtroopocat](https://user-images.githubusercontent.com/6803398/145720611-ed2a5dbc-5c75-4beb-a9b2-e0c5a18260cc.png
+    "createMysqlService14") 
 
 
-
-## Try out your new MySQL service
-
+Now, you are ready to work with MyDQL on Aiven platform!
 
